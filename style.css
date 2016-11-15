@@ -6,7 +6,7 @@ header {
     border: 1px solid blue;
     box-sizing: content-box;
     text-align: center;
-background-color: black;
+    background-color: black;
     width: 75vh;
     color: white;
     margin: auto;
@@ -14,17 +14,13 @@ background-color: black;
     margin-top: 2%;
 }
 
-
-
 main {
-    /*border: 1px solid black;*/
     box-sizing: content-box;
     text-align: center;
-
 }
 
 .info_div {
-border: 1px solid black;
+    border: 1px solid black;
 }
 
 .info_div a {
@@ -41,11 +37,7 @@ border: 1px solid black;
     color: black
 }
 
-
-
-
 footer {
-    /*border: 1px solid red;*/
     box-sizing: content-box;
     text-align: center;
 }
