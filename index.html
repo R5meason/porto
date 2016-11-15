@@ -5,19 +5,77 @@
     <title>Mindy Eason: My Portfolio</title>
     <link type="text/css" rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
 </head>
-<body>
+<body ng-app="ngAnimate">
+
 <header>
-    <h1>Header Text</h1>
-    <div id="nav">
-        <a href="">About</a>
-        <a href="">Projects</a>
-        <a href="">Contact</a>
-    </div>
+    <h1>
+        Mindy Eason - Portfolio
+    </h1>
+        <div id="nav">
+        <button class="nav_btn" ng-click="toShow='about_me'">About</button>
+        <button class="nav_btn" ng-click="toShow='apps'">Applications</button>
+        <button class="nav_btn" ng-click="toShow='contact'">Contact</button>
+        </div>
+
 </header>
-<video id="bgVid" autoplay loop>
-<source src="vids/waterBg.mp4" type="video/mp4" id="waterBg">
-<source src="vids/waterBg.ogg" type="video/ogg">
-</video>
+
+<main>
+    <!-- about div ------------------------------------------------------------------------------------------>
+    <div ng-show="toShow=='about_me'" class="info_div">
+        <p>
+            Wolf tousled forage drinking vinegar YOLO, PBR&B vegan nisi woke tumeric enamel pin meditation officia. Deep
+            v id squid banjo irony messenger bag. Ad exercitation occupy tumeric post-ironic, farm-to-table schlitz
+            chambray mixtape. Letterpress normcore tacos, craft beer crucifix single-origin coffee cred duis tousled
+            tumblr hoodie brooklyn. Distillery deserunt pok pok est, stumptown messenger bag vape PBR&B chillwave
+            knausgaard bespoke ethical. Commodo XOXO quinoa activated charcoal, venmo helvetica chambray ad distillery
+            assumenda raw denim. Helvetica la croix glossier esse, tumeric chambray wayfarers.
+
+            Hashtag tempor whatever marfa, affogato pickled ennui. 3 wolf moon cronut locavore flexitarian austin
+            chartreuse, thundercats ut artisan. Venmo occupy placeat chambray squid sartorial VHS, franzen live-edge.
+            Yuccie aesthetic cardigan readymade lo-fi master cleanse. Incididunt pabst iPhone enim pickled marfa.
+            Laborum venmo velit raw denim forage fashion axe celiac, edison bulb disrupt jianbing irure intelligentsia
+            pariatur hexagon affogato. Literally sartorial twee tumblr cred dolor iceland chambray, pinterest tumeric
+            yuccie live-edge.
+        </p>
+        <br>
+        <button class="nav_btn" ng-click="toShow='exit_screen'">Close</button>
+    </div>
+    <br>
+    <!-- Applications Div --------------------------------------------------------------------------------->
+
+    <div ng-show="toShow=='apps'" class="info_div">
+        <!-- click on link, should show the app below link -->
+        <a href="">Deal Finder</a>
+        <a href="">Space Cat Tic Tac Toe</a>
+        <a href="">Calculator</a>
+        <br>
+        <!--<span id=""></span>-->
+        <!--<span id=""></span>-->
+        <button class="nav_btn" ng-click="toShow='exit_screen'">Close</button>
+    </div>
+    <br>
+    <!-- Contact ------------------------------------------------------------------------------>
+    <div ng-show="toShow=='contact'" class="info_div">
+        <p>
+            Tilde DIY whatever, aesthetic franzen do gastropub post-ironic deserunt selvage sartorial. Biodiesel
+            asymmetrical paleo gentrify fam banh mi meh quinoa, deserunt man braid taxidermy fashion axe. Kombucha
+            mustache
+            trust fund meditation bushwick. Consequat twee roof party, assumenda kogi cupidatat hashtag est jean shorts
+            locavore. Ea XOXO actually whatever, pariatur cliche PBR&B. Taxidermy deep v eiusmod irony consequat,
+            disrupt
+            knausgaard id street art incididunt quinoa tote bag. Sapiente lumbersexual cronut sriracha waistcoat.
+        </p>
+        <br>
+        <button class="nav_btn" ng-click="toShow='exit_screen'">Close</button>
+    </div>
+</main>
+<footer>
+
+</footer>
+
+
 </body>
 </html>
