@@ -21,8 +21,6 @@ body {
     border-top: 1px solid whitesmoke;
 }
 
-
-
 .nav_btn {
     border: 1px solid white;
     display: inline-block;
@@ -31,7 +29,6 @@ body {
     color: white;
     font-weight: bold;
 }
-
 
 main {
     box-sizing: content-box;
@@ -51,29 +48,24 @@ main {
 
 #about {
     width: 60vw;
-margin: auto;
+    margin: auto;
     border-radius: 5%;
     margin-top: 5%;
 }
 
 #blurb {
-    /*border: 1px solid red;*/
     width: 80%;
     display: inline-block;
-
     margin: auto;
 }
 
-
-
 table {
-width: 50%;
+    width: 50%;
     margin: auto;
 }
 
 table, th, td {
     border-collapse: collapse;
-
 }
 
 th {
@@ -84,8 +76,6 @@ td {
     text-align: left;
     color: yellow;
 }
-
-
 
 footer {
     box-sizing: content-box;
