@@ -1,87 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Mindy Eason: My Portfolio</title>
-    <link type="text/css" rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Supermercado+One" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body ng-app="ngAnimate">
-<video id="bgVid" autoplay loop>
-<source src="vids/waterBg.mp4" type="video/mp4" id="waterBg">
-</video>
-<header id="nav">
+<body>
+
+<!--<video id="bgVid" autoplay loop>-->
+    <!--<source src="vids/waterBg.mp4" type="video/mp4" id="waterBg">-->
+<!--</video>-->
+
+<div class="container1">
     <h1>
         Mindy Eason / Portfolio
     </h1>
-
-    <button class="nav_btn" ng-click="toShow='about_me'">About</button>
-    <button class="nav_btn" ng-click="toShow='apps'">Applications</button>
-    <button class="nav_btn" ng-click="toShow='contact_me'">Contact</button>
-</header>
-
-<main>
-    <!-- about div ------------------------------------------------------------------------------------------>
-    <div ng-show="toShow=='about_me'" class="info_div" id="about">
-        <div id="blurb">
-            <h4>
-                After spending a considerable chunk of my life working in call centers and customer service, I leapt at
-                the chance
-                to go back to school, and make my hobby of making simple web pages into an actual career I love. The
-                road to
-                becoming a junior developer has not always easy, in fact, it's been quite a challenge. But working in a
-                field I'm passionate about has made all the difference in the world.
-            </h4>
-            <p>Skills:</p>
-            <table>
-                <tr>
-                    <td>HTML</td>
-                    <td>CSS</td>
-                    <td>JavaScript</td>
-                </tr>
-                <tr>
-                    <td>Firebase</td>
-                    <td>jQuery</td>
-                    <td>GitHub</td>
-                </tr>
-                <tr>
-                    <td>APIs</td>
-                    <td>Visio</td>
-                    <td>and more....</td>
-                </tr>
-            </table>
-            <br>
-            <button class="nav_btn" ng-click="toShow='exit_screen'">Close</button>
-        </div>
+    <div>
+        <button class="open" data-param="aboutDiv" id="aboutBtn">About</button>
+        <button class="open" data-param="appsDiv" id="appsBtn">Applications</button>
+        <button class="open" data-param="contactDiv" id="contactBtn">Contact</button>
     </div>
-    <br>
-    <!-- Applications Div --------------------------------------------------------------------------------->
-    <div ng-show="toShow=='apps'" class="info_div" id="applications">
-
-        <!-- click on link, should show the app below link -->
-        <a href="">Deal Finder</a>
-        <a href="">Space Cat Tic Tac Toe</a>
-        <a href="">Calculator</a>
+</div>
+<div class="container2">
+    <div id="aboutDiv">
+        <p>
+            After spending a considerable chunk of my life working in call centers and customer service, I leapt at the
+            chance to go back to school, and make my hobby of making simple web pages into an actual career I love. The
+            road to becoming a junior developer has not always easy, in fact, it's been quite a challenge. But working
+            in a field I'm passionate about has made all the difference in the world.
+        </p>
+        <p>Skills:</p>
+        <table>
+            <tr>
+                <td>HTML</td>
+                <td>CSS</td>
+                <td>JavaScript</td>
+            </tr>
+            <tr>
+                <td>Firebase</td>
+                <td>jQuery</td>
+                <td>GitHub</td>
+            </tr>
+            <tr>
+                <td>APIs</td>
+                <td>Visio</td>
+                <td>and more....</td>
+            </tr>
+        </table>
         <br>
-        <!--<span id=""></span>-->
-        <!--<span id=""></span>-->
-        <button class="nav_btn" ng-click="toShow='exit_screen'">Close</button>
+        <button class="close" data-param="aboutDiv">close</button>
     </div>
-        </div>
-    <!-- Contact ------------------------------------------------------------------------------>
-    <div ng-show="toShow=='contact_me'" class="info_div" id="contact">
-        <p>Location: So Cal</p>
-        <p>Email</p>
-        <p>GitHub</p>
-        <p>LinkedIn</p>
-        <p>Twitter</p>
+    <div id="appsDiv">
+        <br>apps
         <br>
-        <button class="nav_btn" ng-click="toShow='exit_screen'">Close</button>
+        <button class="close" data-param="appsDiv">close</button>
     </div>
- </main>
-<footer></footer>
+    <div id="contactDiv">
+        <br>Contact
+        <br>
+        <button class="close" data-param="contactDiv">close</button>
+    </div>
+
+</div>
+
 </body>
 </html>
