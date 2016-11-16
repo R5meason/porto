@@ -20,7 +20,7 @@
 
     <button class="nav_btn" ng-click="toShow='about_me'">About</button>
     <button class="nav_btn" ng-click="toShow='apps'">Applications</button>
-    <button class="nav_btn" ng-click="toShow='contact'">Contact</button>
+    <button class="nav_btn" ng-click="toShow='contact_me'">Contact</button>
 </header>
 
 <main>
@@ -59,8 +59,8 @@
     </div>
     <br>
     <!-- Applications Div --------------------------------------------------------------------------------->
+    <div ng-show="toShow=='apps'" class="info_div" id="applications">
 
-    <div ng-show="toShow=='apps'" class="info_div">
         <!-- click on link, should show the app below link -->
         <a href="">Deal Finder</a>
         <a href="">Space Cat Tic Tac Toe</a>
@@ -70,9 +70,9 @@
         <!--<span id=""></span>-->
         <button class="nav_btn" ng-click="toShow='exit_screen'">Close</button>
     </div>
-    <br>
+        </div>
     <!-- Contact ------------------------------------------------------------------------------>
-    <div ng-show="toShow=='contact'" class="info_div">
+    <div ng-show="toShow=='contact_me'" class="info_div" id="contact">
         <p>Location: So Cal</p>
         <p>Email</p>
         <p>GitHub</p>
