@@ -11,38 +11,47 @@
 </head>
 <body ng-app="ngAnimate">
 
-<header>
+<header id="nav">
     <h1>
         Mindy Eason / Portfolio
     </h1>
-    <div id="nav">
+
         <button class="nav_btn" ng-click="toShow='about_me'">About</button>
         <button class="nav_btn" ng-click="toShow='apps'">Applications</button>
         <button class="nav_btn" ng-click="toShow='contact'">Contact</button>
-    </div>
-
 </header>
 
 <main>
     <!-- about div ------------------------------------------------------------------------------------------>
-    <div ng-show="toShow=='about_me'" class="info_div">
-        <p>
-            Wolf tousled forage drinking vinegar YOLO, PBR&B vegan nisi woke tumeric enamel pin meditation officia. Deep
-            v id squid banjo irony messenger bag. Ad exercitation occupy tumeric post-ironic, farm-to-table schlitz
-            chambray mixtape. Letterpress normcore tacos, craft beer crucifix single-origin coffee cred duis tousled
-            tumblr hoodie brooklyn. Distillery deserunt pok pok est, stumptown messenger bag vape PBR&B chillwave
-            knausgaard bespoke ethical. Commodo XOXO quinoa activated charcoal, venmo helvetica chambray ad distillery
-            assumenda raw denim. Helvetica la croix glossier esse, tumeric chambray wayfarers.
-
-            Hashtag tempor whatever marfa, affogato pickled ennui. 3 wolf moon cronut locavore flexitarian austin
-            chartreuse, thundercats ut artisan. Venmo occupy placeat chambray squid sartorial VHS, franzen live-edge.
-            Yuccie aesthetic cardigan readymade lo-fi master cleanse. Incididunt pabst iPhone enim pickled marfa.
-            Laborum venmo velit raw denim forage fashion axe celiac, edison bulb disrupt jianbing irure intelligentsia
-            pariatur hexagon affogato. Literally sartorial twee tumblr cred dolor iceland chambray, pinterest tumeric
-            yuccie live-edge.
-        </p>
-        <br>
-        <button class="nav_btn" ng-click="toShow='exit_screen'">Close</button>
+    <div ng-show="toShow=='about_me'" class="info_div" id="about">
+        <div id="blurb">
+            <h4>
+                After spending a considerable chunk of my life working in call centers and customer service, I leapt at the chance
+                to go back to school, and make my hobby of making simple web pages into an actual career I love. The road to
+                becoming a junior developer has not always easy, in fact, it's been quite a challenge. But working in a
+                field I'm passionate about has made all the difference in the world.
+            </h4>
+<p>Skills:</p>
+            <table>
+                 <tr>
+                    <td>HTML</td>
+                    <td>CSS</td>
+                    <td>JavaScript</td>
+                </tr>
+                <tr>
+                    <td>Firebase</td>
+                    <td>jQuery</td>
+                    <td>GitHub</td>
+                </tr>
+                <tr>
+                    <td>APIs</td>
+                    <td>Visio</td>
+                    <td>and more....</td>
+                </tr>
+            </table>
+            <br>
+            <button class="nav_btn" ng-click="toShow='exit_screen'">Close</button>
+        </div>
     </div>
     <br>
     <!-- Applications Div --------------------------------------------------------------------------------->
@@ -72,6 +81,40 @@
         <br>
         <button class="nav_btn" ng-click="toShow='exit_screen'">Close</button>
     </div>
+
+    <!-- test div -->
+    <!--<div id="test">-->
+        <!--<div id="blurb">-->
+            <!--<h4>-->
+                <!--After spending a considerable chunk of my life working in call centers and customer service, I leapt at the chance-->
+                <!--to go back to school, and make my hobby of making simple web pages into an actual career I love. the road to-->
+                <!--becoming a junior developer has not always easy, in fact, it's been quite a challenge. but working in a-->
+                <!--field I'm passionate about has made all the difference in the world.-->
+            <!--</h4>-->
+
+            <!--<table>-->
+                <!--<tr>-->
+                    <!--<th colspan="3">Skills</th>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td>∙ HTML</td>-->
+                    <!--<td>∙ CSS</td>-->
+                    <!--<td>∙ JavaScript</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td>∙ Firebase</td>-->
+                    <!--<td>∙ jQuery</td>-->
+                    <!--<td>∙ GitHub</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td>∙ API Integration</td>-->
+                    <!--<td>∙ Responsive Design</td>-->
+                    <!--<td>∙ Visio</td>-->
+                <!--</tr>-->
+            <!--</table>-->
+        <!--</div>-->
+<!--</div>-->
+
 </main>
 <footer></footer>
 </body>
