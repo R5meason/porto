@@ -13,4 +13,5 @@ $( document ).ready(function() {
         $('#'+divId).slideUp("slow");
         open = false;
     });
+
 });
