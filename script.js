@@ -1,34 +1,42 @@
-var open = false;
+var divOpen = false;
+var appOpen = false;
 
 $( document ).ready(function() {
     $('.open').click(function() {
         var divId = $(this).attr("data-param");
-        if (!open) {
-            $('#'+divId).slideDown();
-            open = true;
+        if (!divOpen) {
+            $('#'+divId).slideDown("slow");
+            divOpen = true;
         }
     });
     $(".close").click(function(){
         var divId = $(this).attr("data-param");
         $('#'+divId).slideUp("slow");
-        open = false;
+        divOpen = false;
+        if (appOpen) {
+            $("#appIndex").show("slow");
+            appOpen = false;
+        }
     });
     $("#dealBtn").click(function(){
-        $("#deal").show();
-        $("#cats").hide();
-        $("#calc").hide();
-        $("#appIndex").hide();
+        $("#deal").show("slow");
+        $("#cats").hide("fast");
+        $("#calc").hide("fast");
+        $("#appIndex").hide("fast");
+        appOpen = true;
     });
     $("#catsBtn").click(function(){
-        $("#cats").show();
-        $("#deal").hide();
-        $("#calc").hide();
-        $("#appIndex").hide();
+        $("#cats").show("slow");
+        $("#deal").hide("fast");
+        $("#calc").hide("fast");
+        $("#appIndex").hide("fast");
+        appOpen = true;
     });
     $("#calcBtn").click(function(){
-        $("#calc").show();
-        $("#cats").hide();
-        $("#deal").hide();
-        $("#appIndex").hide();
+        $("#calc").show("slow");
+        $("#cats").hide("fast");
+        $("#deal").hide("fast");
+        $("#appIndex").hide("fast");
+        appOpen = true;
     });
 });

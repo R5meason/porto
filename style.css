@@ -50,6 +50,7 @@ h1 {
     font-weight: bold;
 }
 
+
 #appsDiv,
 #contactDiv,
 #aboutDiv {
@@ -131,4 +132,5 @@ float: right;
     margin: auto;
     font-family: 'Supermercado One', sans-serif;
     height: 50%;
+    padding: 20%;
 }
