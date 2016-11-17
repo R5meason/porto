@@ -87,7 +87,6 @@ td {
 #appsDiv img {
     height: 80%;
     margin: auto;
-    border: 1px solid blue;
 }
 
 .appInfo {
@@ -97,7 +96,8 @@ td {
 }
 
 .appInfo h5 {
-float: right;
+text-align: justify;
+padding: 0 15% 0 15%;
 }
 
 #dealBtn {
