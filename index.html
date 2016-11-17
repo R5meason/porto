@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Eczar:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css?family=Supermercado+One" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="script.js"></script>
@@ -48,11 +52,11 @@
         <button class="close" data-param="aboutDiv">close</button>
     </div>
     <div id="appsDiv">
-        <button class="open">Deal Finder</button>
-        <button class="open">Space Cat Tic-Tac-Toe</button>
-        <button class="open">Calculator</button>
+        <button class="open" id="dealBtn">Deal Finder</button>
+        <button class="open" id="catsBtn">Space Cats</button>
+        <button class="open" id="calcBtn">Calculator</button>
         <br>
-        <div id="test" style="border: 1px solid blue">
+        <div class="appInfo" id="test">
             <img src="imgs/spaceCats.PNG">
             <h5>Space themed tic-tac-toe game with various board sizes, created with a three-member development team.
                 Dynamic game board of varying sizes and appearance accomplished with HTML5 and CSS.
@@ -60,17 +64,14 @@
                 JavaScript and jQuery.
             </h5>
         </div>
+        <br>
         <button class="close" data-param="appsDiv">close</button>
     </div>
-
-
     <div id="contactDiv">
         <br>Contact
         <br>
         <button class="close" data-param="contactDiv">close</button>
     </div>
-
 </div>
-
 </body>
 </html>

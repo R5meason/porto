@@ -13,4 +13,8 @@ $( document ).ready(function() {
         $('#'+divId).slideUp("slow");
         open = false;
     });
+    $("#catsBtn").click(function(){
+        $("#test").show();
+    });
+
 });
