@@ -8,6 +8,7 @@ h1 {
     border-top: 1px solid whitesmoke;
 }
 
+
 .container1 {
     overflow: hidden;
     box-sizing: content-box;
@@ -88,6 +89,7 @@ td {
 .appInfo {
     height: 30vh;
     display: none;
+    position: relative;
 }
 
 .appInfo h5 {
@@ -116,4 +118,17 @@ float: right;
     font-weight: lighter;
     font-size: 2em;
     color: silver;
+}
+
+#calc,
+#cats,
+#deal {
+    position: absolute;
+}
+
+#appIndex {
+    color: white;
+    margin: auto;
+    font-family: 'Supermercado One', sans-serif;
+    height: 50%;
 }

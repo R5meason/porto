@@ -13,8 +13,22 @@ $( document ).ready(function() {
         $('#'+divId).slideUp("slow");
         open = false;
     });
-    $("#catsBtn").click(function(){
-        $("#test").show();
+    $("#dealBtn").click(function(){
+        $("#deal").show();
+        $("#cats").hide();
+        $("#calc").hide();
+        $("#appIndex").hide();
     });
-
+    $("#catsBtn").click(function(){
+        $("#cats").show();
+        $("#deal").hide();
+        $("#calc").hide();
+        $("#appIndex").hide();
+    });
+    $("#calcBtn").click(function(){
+        $("#calc").show();
+        $("#cats").hide();
+        $("#deal").hide();
+        $("#appIndex").hide();
+    });
 });
