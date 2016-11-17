@@ -3,7 +3,6 @@ body {
     font-family: sans-serif;
 }
 
-/* For the drop down function */
 .container1 {
     overflow: hidden;
     box-sizing: content-box;
@@ -55,8 +54,6 @@ body {
     font-family: "Verdana", sans-serif;
 }
 
-/* end styling for drop down function */
-
 table {
     width: 50%;
     margin: auto;
@@ -72,25 +69,21 @@ td {
     padding-left: 13%;
 }
 
-.appSelector {
-    border: 1px solid yellow;
+#appsDiv {
+    text-align: center;
+}
+
+#appsDiv img {
+    height: 100%;
+    margin: auto;
+    border: 1px solid blue;
+}
+
+#test {
     height: 30vh;
 }
 
-.appSelector img {
-    width: 50%;
-    height: 50%;
-}
+#test h5 {
+float: right;
 
-.appSelector span {
-    font-size: 0.8em;
-    font-weight: bold;
 }
-
-#calculator,
-#spaceCats,
-#dealApp {
-    width: 30%;
-    display: inline-block;
-}
-
