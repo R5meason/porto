@@ -1,11 +1,15 @@
 body {
     margin: auto;
     font-family: sans-serif;
-    position: fixed;
+    position: relative;
 }
 
 video#bgVid {
-height: 100vh;
+    min-width: 190%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: fixed;
 }
 
 h1 {
@@ -21,11 +25,11 @@ h1 {
     width: 60vw;
     color: white;
     border-radius: 5%;
-    margin: 2% 0 0 15%;
+    margin: 2% 0 0 20%;
     font-family: 'Supermercado One', sans-serif;
-    position: absolute;
     border-bottom: 1px solid whitesmoke;
     border-top: 1px solid whitesmoke;
+    position: absolute;
 }
 
 .container2 {
@@ -36,7 +40,7 @@ h1 {
     width: 60vw;
     color: white;
     border-radius: 5%;
-    margin: 15% 0 0 15%;
+    margin: 15% 0 0 20%;
     font-family: 'Supermercado One', sans-serif;
     position: absolute;
 }
