@@ -1,38 +1,41 @@
 var divOpen = false;
 var appOpen = false;
 
-$( document ).ready(function() {
-    $('.open').click(function() {
+$(document).ready(function () {
+    $('.open').click(function () {
         var divId = $(this).attr("data-param");
         if (!divOpen) {
-            $('#'+divId).slideDown("slow");
+            $('#' + divId).slideDown("slow");
             divOpen = true;
         }
+        else {
+            $(".close").effect("highlight", {color: 'cornflowerblue'}, "slow");
+        }
     });
-    $(".close").click(function(){
+    $(".close").click(function () {
         var divId = $(this).attr("data-param");
-        $('#'+divId).slideUp("slow");
+        $('#' + divId).slideUp("slow");
         divOpen = false;
         if (appOpen) {
             $("#appIndex").show("slow");
             appOpen = false;
         }
     });
-    $("#dealBtn").click(function(){
+    $("#dealBtn").click(function () {
         $("#deal").show("slow");
         $("#cats").hide("fast");
         $("#calc").hide("fast");
         $("#appIndex").hide("fast");
         appOpen = true;
     });
-    $("#catsBtn").click(function(){
+    $("#catsBtn").click(function () {
         $("#cats").show("slow");
         $("#deal").hide("fast");
         $("#calc").hide("fast");
         $("#appIndex").hide("fast");
         appOpen = true;
     });
-    $("#calcBtn").click(function(){
+    $("#calcBtn").click(function () {
         $("#calc").show("slow");
         $("#cats").hide("fast");
         $("#deal").hide("fast");
@@ -40,3 +43,4 @@ $( document ).ready(function() {
         appOpen = true;
     });
 });
+

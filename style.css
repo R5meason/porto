@@ -15,6 +15,7 @@ video#bgVid {
 h1 {
     border-bottom: 1px solid whitesmoke;
     border-top: 1px solid whitesmoke;
+    margin-bottom: 1%;
 }
 
 .container1 {
@@ -30,6 +31,7 @@ h1 {
     border-bottom: 1px solid whitesmoke;
     border-top: 1px solid whitesmoke;
     position: absolute;
+    font-size: 1.2em;
 }
 
 .container2 {
@@ -51,31 +53,63 @@ h1 {
     top: 0;
     background-color: black;
     z-index: 1;
-    border: 1px solid white;
+    border: none;
     display: inline-block;
     border-radius: 10%;
     color: white;
-    font-weight: bold;
+    /*font-weight: bold;*/
+    font-family: 'Supermercado One', sans-serif;
+    font-size: 1em;
+    outline: none;
 }
 
-#appsDiv,
-#contactDiv,
-#aboutDiv {
+#appsBtn {
+    margin: 0 5% 0 5%;
+}
+
+.displayInfo {
     background-color: black;
     display: none;
     color: white;
     border-radius: 5%;
     height: 50vh;
     font-family: "Verdana", sans-serif;
+    border-bottom: 1px solid whitesmoke;
+    border-top: 1px solid whitesmoke;
+}
+
+#aboutDiv {
+height: 100%;
+}
+
+#appsDiv {
+}
+
+#contactDiv {
+
+}
+
+
+#aboutDiv p {
+    text-align: justify;
+    margin: 2% 3% 2% 3%;
+
 }
 
 table {
     width: 50%;
     margin: auto;
+    margin-bottom: 2%;
 }
 
-table, td {
+table, th, td {
     border-collapse: collapse;
+}
+
+th {
+    padding-bottom: 2%;
+    font-family: 'Supermercado One', sans-serif;
+    font-size: 1.5em;
 }
 
 td {
@@ -90,18 +124,23 @@ td {
 
 #appsDiv img {
     height: 80%;
-    margin: auto;
+    /*margin: auto;*/
+    float: left;
+    margin: 0 1% 0 2%;
 }
 
 .appInfo {
     height: 30vh;
     display: none;
     position: relative;
+margin-top: 5%;
 }
 
 .appInfo h5 {
 text-align: justify;
-padding: 0 15% 0 15%;
+margin-right: 2%;
+    margin-top: -0.5%;
+
 }
 
 #dealBtn {
@@ -109,6 +148,7 @@ padding: 0 15% 0 15%;
     border: none;
     color: darkred;
     font-size: 2em;
+    margin-top: 2%;
 }
 
 #catsBtn {
@@ -117,6 +157,7 @@ padding: 0 15% 0 15%;
     font-weight: lighter;
     font-size: 2em;
     color: yellow;
+    margin-top: 2%;
 }
 
 #calcBtn {
@@ -125,6 +166,7 @@ padding: 0 15% 0 15%;
     font-weight: lighter;
     font-size: 2em;
     color: silver;
+    margin-top: 2%;
 }
 
 #calc,
@@ -132,6 +174,8 @@ padding: 0 15% 0 15%;
 #deal {
     position: absolute;
 }
+
+
 
 #appIndex {
     color: white;
@@ -141,6 +185,14 @@ padding: 0 15% 0 15%;
     padding: 20%;
 }
 
+#contactDiv img {
+    padding: 1% 2% 2% 1%;
+}
+
+#contactDiv a {
+    text-decoration: none;
+
+}
 
 #twitterLogo,
 #linkedLogo {
@@ -149,9 +201,32 @@ padding: 0 15% 0 15%;
 
 
 #anglistLogo {
-    height: 8%;
+    height: 7%;
 }
 
 #githubLogo {
     height: 12%;
 }
+
+#contactDiv h2 {
+    font-family: 'Supermercado One', sans-serif;
+    color: white;
+    border-bottom: 1px solid whitesmoke;
+    border-top: 1px solid whitesmoke;
+}
+
+#contactDiv input {
+    margin: 3% 0 3% 0;
+    width: 25%;
+    height: 2vh;
+    border-radius: 5%;
+    border: 3px solid steelblue;
+}
+
+#contactDiv textarea {
+    width: 25%;
+    height: 10vh;
+    border-radius: 5%;
+    border: 3px solid steelblue;
+}
+

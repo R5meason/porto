@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <!--<script type="text/javascript"></script>-->
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Eczar:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Supermercado+One" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="script.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
 <video id="bgVid" autoplay loop>
     <source src="vids/waterBg.mp4" type="video/mp4" id="waterBg">
-    <source src="vids/waterBg.ogg" type="video/ogg">
+    <!--<source src="vids/waterBg.ogg" type="video/ogg">-->
 </video>
 
 <div class="container1">
@@ -27,16 +29,21 @@
     </div>
 </div>
 <div class="container2">
-    <div id="aboutDiv">
+    <div class="displayInfo" id="aboutDiv">
         <button class="close" data-param="aboutDiv">close</button>
         <p>
-            The road to becoming a junior developer has not always easy, in fact, it's been quite a challenge. After a
-            long stint of working in call centers and customer service, I reevaluated what's really important to me, and
-            decided to go back to school. With the knowledge and experience I've gained gained by designing games, to
-            developing apps, I have turned a simple hobby into a career in a field I thoroughly enjoy.
+            The road to becoming a junior developer has not always easy, in fact, it's been quite challenging at times.
+            After a long stint of working in call centers and customer service, I reevaluated what's really important
+            to me, and decided to go back to school. With the knowledge and experience I've gained gained by designing
+            games, to developing apps, I have turned a simple hobby into a career in a field I thoroughly enjoy.
         </p>
-        <p>Skills:</p>
+
         <table>
+            <tr>
+                <th  colspan="3">
+                Skills:
+                </th>
+            </tr>
             <tr>
                 <td>HTML</td>
                 <td>CSS</td>
@@ -54,7 +61,7 @@
             </tr>
         </table>
     </div>
-    <div id="appsDiv">
+    <div class="displayInfo" id="appsDiv">
         <button class="close" data-param="appsDiv">close</button>
         <br>
         <button class="open" id="dealBtn">Deal Finder</button>
@@ -90,14 +97,30 @@
             </h5>
         </div>
     </div>
-    <div id="contactDiv">
+    <div class="displayInfo" id="contactDiv">
         <button class="close" data-param="contactDiv">close</button>
         <br>
-       <a href ="https://www.linkedin.com/in/mindy-eason-872653123" target="_blank"><img src="imgs/logo_linkedIn.PNG" id="linkedLogo"></a>
-         <a href ="https://github.com/R5meason" target="_blank"><img src="imgs/logo_github.png" id="githubLogo"></a>
- <br>
-        <a href="https://twitter.com/R5meason" target="_blank"><img src="imgs/logo_twitter.png" id="twitterLogo"></a>
-        <a href ="https://angel.co/mindy-eason" target="_blank"><img src="imgs/logo_angellist.png" id="anglistLogo"></a>
+        <a href="https://www.linkedin.com/in/mindy-eason-872653123" target="_blank">
+            <img src="imgs/logo_linkedIn.PNG" id="linkedLogo">
+        </a>
+        <a href="https://github.com/R5meason" target="_blank">
+            <img src="imgs/logo_github.png" id="githubLogo">
+        </a>
+
+        <a href="https://twitter.com/R5meason" target="_blank">
+            <img src="imgs/logo_twitter.png" id="twitterLogo">
+        </a>
+        <a href="https://angel.co/mindy-eason" target="_blank">
+            <img src="imgs/logo_angellist.png" id="anglistLogo">
+        </a>
+         <h2>Click on an option above (opens in new tab) or leave a message below</h2>
+        <form method="POST" action="http://formspree.io/melynda.eason@gmail.com">
+            <input type="email" name="email" placeholder="Email">
+            <br>
+            <textarea name="message" placeholder="Message"></textarea>
+            <br>
+            <button type="submit">Send</button>
+        </form>
     </div>
 </div>
 </body>
