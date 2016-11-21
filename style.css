@@ -57,12 +57,14 @@ h1 {
     display: inline-block;
     border-radius: 10%;
     color: white;
-    /*font-weight: bold;*/
+
     font-family: 'Supermercado One', sans-serif;
     font-size: 1em;
     outline: none;
 }
 
+.appLinks a:hover,
+.open:hover,
 .close:hover {
     color: yellow;
 }
@@ -83,16 +85,12 @@ h1 {
 }
 
 #aboutDiv {
-height: 100%;
-}
-
-#appsDiv {
+    height: 100%;
 }
 
 #contactDiv {
 
 }
-
 
 #aboutDiv p {
     text-align: justify;
@@ -104,6 +102,7 @@ table {
     width: 50%;
     margin: auto;
     margin-bottom: 2%;
+    font-family: 'Eczar', sans-serif;
 }
 
 table, th, td {
@@ -120,6 +119,7 @@ td {
     text-align: left;
     color: yellow;
     padding-left: 13%;
+    letter-spacing: 1px;
 }
 
 #appsDiv {
@@ -128,7 +128,6 @@ td {
 
 #appsDiv img {
     height: 80%;
-    /*margin: auto;*/
     float: left;
     margin: 0 1% 0 2%;
 }
@@ -137,40 +136,50 @@ td {
     height: 30vh;
     display: none;
     position: relative;
-margin-top: 5%;
+    margin-top: 2%;
 }
 
 .appInfo h5 {
-text-align: justify;
-margin-right: 2%;
+    text-align: justify;
+    margin-right: 2%;
     margin-top: -0.5%;
-
 }
+
+.appsBtn {
+    background-color: black;
+    font-size: 2em;
+    margin-top: 2%;
+    border: none;
+    font-weight: lighter;
+    outline: none;
+}
+
+/*.appLinks {*/
+    /*font-size: 1.5em;*/
+/*}*/
+
+.appLinks a {
+    font-family: 'Supermercado One', sans-serif;
+    color: white;
+text-decoration: none;
+    font-size: 1.5em;
+}
+
 
 #dealBtn {
     font-family: 'Eczar', sans-serif;
-    border: none;
     color: darkred;
-    font-size: 2em;
-    margin-top: 2%;
+    font-weight: normal;
 }
 
 #catsBtn {
     font-family: 'Faster One', sans-serif;
-    border: none;
-    font-weight: lighter;
-    font-size: 2em;
     color: yellow;
-    margin-top: 2%;
 }
 
 #calcBtn {
     font-family: 'VT323', monospace, sans-serif;
-    border: none;
-    font-weight: lighter;
-    font-size: 2em;
     color: silver;
-    margin-top: 2%;
 }
 
 #calc,
@@ -178,8 +187,6 @@ margin-right: 2%;
 #deal {
     position: absolute;
 }
-
-
 
 #appIndex {
     color: white;
@@ -203,7 +210,6 @@ margin-right: 2%;
     height: 10%
 }
 
-
 #anglistLogo {
     height: 7%;
 }
@@ -220,7 +226,7 @@ margin-right: 2%;
 }
 
 #contactDiv input {
-    margin: 3% 0 3% 0;
+    margin: 1% 0 3% 0;
     width: 25%;
     height: 2vh;
     border-radius: 5%;
