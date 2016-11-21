@@ -1,7 +1,8 @@
 $(document).ready(function () {
-    var divOpen = true;
+    var divOpen = false;
     var appOpen = false;
     $('#aboutDiv').slideDown("fast");
+    divOpen = true;
 
     $('.open').click(function () {
         var divId = $(this).attr("data-param");
