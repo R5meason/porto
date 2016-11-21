@@ -1,7 +1,8 @@
-var divOpen = false;
-var appOpen = false;
-
 $(document).ready(function () {
+    var divOpen = true;
+    var appOpen = false;
+    $('#aboutDiv').slideDown("fast");
+
     $('.open').click(function () {
         var divId = $(this).attr("data-param");
         if (!divOpen) {
@@ -43,4 +44,3 @@ $(document).ready(function () {
         appOpen = true;
     });
 });
-
