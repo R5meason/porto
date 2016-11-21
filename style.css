@@ -63,6 +63,10 @@ h1 {
     outline: none;
 }
 
+.close:hover {
+    color: yellow;
+}
+
 #appsBtn {
     margin: 0 5% 0 5%;
 }
