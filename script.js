@@ -1,9 +1,13 @@
-$(document).ready(function () {
-    var divOpen = false;
-    var appOpen = false;
-    // $('#aboutDiv').slideDown("fast");
-    // divOpen = true;
 
+var divOpen = false;
+var appOpen = false;
+
+$(window).load(function() {
+    $('#aboutDiv').slideDown("fast");
+    divOpen = true;
+});
+
+$(document).ready(function () {
     $('.open').click(function () {
         var divId = $(this).attr("data-param");
         if (!divOpen) {
