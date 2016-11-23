@@ -228,3 +228,12 @@ td {
     border: 3px solid steelblue;
 }
 
+.errorBtns button {
+   color: black;
+}
+
+.errorBtns button:hover {
+    color: black;
+}
+
+
