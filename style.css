@@ -62,7 +62,7 @@ h1 {
     outline: none;
 }
 
-.error a:hover,
+#error a:hover,
 .appLinks a:hover,
 .open:hover,
 .close:hover {
@@ -237,13 +237,12 @@ td {
     color: black;
 }
 
-.error {
-    font-family: 'Supermercado One', sans-serif;
-    font-size: 1.5em;
-    /*color: white;*/
-}
-
-.error a {
+#error p,
+#error a {
     text-decoration: none;
     color: white;
+    font-family: 'Supermercado One', sans-serif;
+    text-align: center;
+    font-size: 1.5em;
 }
+
