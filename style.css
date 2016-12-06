@@ -5,12 +5,6 @@ body {
     background: url("imgs/waterbg_static.png")
 }
 
-body img {
-    position: fixed;
-    min-width: 190%;
-    min-height: 100%;
-}
-
 
 
 video#bgVid {
@@ -124,6 +118,10 @@ td {
     color: yellow;
     padding-left: 5%;
     letter-spacing: 1px;
+}
+
+.appLinkInfo {
+    font-size: 0.5em;
 }
 
 #appsDiv {
