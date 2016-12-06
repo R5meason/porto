@@ -1,33 +1,10 @@
-
-var divOpen = false;
-var appOpen = false;
-
-$(window).load(function() {
-    $('#aboutDiv').slideDown("fast");
-    divOpen = true;
+$(window).load(function () {
+    $('.displayInfo').slideDown("slow");
 });
 
 $(document).ready(function () {
-    $('.open').click(function () {
-        var divId = $(this).attr("data-param");
-        if (!divOpen) {
-            $('#' + divId).slideDown("slow");
-            divOpen = true;
-        }
-        else {
-            $(".close").effect("highlight", {color: 'cornflowerblue'}, "slow");
-        }
-    });
-    $(".close").click(function () {
-        var divId = $(this).attr("data-param");
-        $('#' + divId).slideUp("slow");
-        divOpen = false;
-        if (appOpen) {
-            $("#appIndex").show("slow");
-            appOpen = false;
-        }
-    });
     $("#dealBtn").click(function () {
+
         $("#deal").show("slow");
         $("#cats").hide("fast");
         $("#calc").hide("fast");
@@ -49,3 +26,10 @@ $(document).ready(function () {
         appOpen = true;
     });
 });
+
+var emailCheck = function () {
+    if (!$('#emailAddy').val().includes("@") || !$('#emailAddy').val().includes(".com")) {
+        console.log("no");
+        document.getElementById("validEmail").innerHTML = "Please Enter a Valid Email Address";
+    }
+};

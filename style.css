@@ -56,13 +56,12 @@ h1 {
     top: 0;
     background-color: black;
     z-index: 1;
-    border: none;
     display: inline-block;
-    border-radius: 10%;
     color: white;
     font-family: 'Supermercado One', sans-serif;
     font-size: 1em;
-    outline: none;
+    text-decoration: none;
+    margin: 0 10%;
 }
 
 #error a:hover,
@@ -129,23 +128,22 @@ td {
 }
 
 #appsDiv img {
-    height: 100%;
     float: left;
     margin: 0 1% 2% 2%;
 }
 
 .appInfo {
-    height: 30vh;
+    /*height: 30vh;*/
     display: none;
     position: relative;
     margin-top: 2%;
+    width: 100%;
 }
 
 .appInfo h5 {
     text-align: justify;
     margin-right: 2%;
     margin-top: -0.5%;
-
 }
 
 
@@ -186,6 +184,7 @@ td {
 #cats,
 #deal {
 position: absolute;
+    width: 100%;
 }
 
 #deal {
@@ -201,7 +200,7 @@ position: absolute;
 }
 
 #contactDiv img {
-    padding: 1% 2% 2% 1%;
+    padding: 0.5% 2% 0 1%;
 }
 
 #contactDiv a {
@@ -221,15 +220,16 @@ position: absolute;
     height: 12%;
 }
 
-#contactDiv h2 {
+#contactDiv h4 {
     font-family: 'Supermercado One', sans-serif;
     color: white;
     border-bottom: 1px solid whitesmoke;
     border-top: 1px solid whitesmoke;
+    width: 100%;
 }
 
 #contactDiv input {
-    margin: 1% 0 3% 0;
+    margin: 0.5% 0 1% 0;
     width: 25%;
     height: 2vh;
     border-radius: 5%;
@@ -244,7 +244,7 @@ position: absolute;
 }
 
 .errorBtns button {
-   color: black;
+    color: black;
 }
 
 .errorBtns button:hover {
@@ -260,3 +260,38 @@ position: absolute;
     font-size: 1.5em;
 }
 
+img#appImgDeal {
+    height: 90%;
+}
+
+img#appImgCats {
+    width: 30%;
+}
+
+img#appImgCalc {
+    width: 30%;
+}
+
+#comment_send {
+    background-color: transparent;
+    border: 2px solid steelblue;
+    border-radius: 15%;
+    color: steelblue;
+    font-weight: bold;
+}
+
+#comment_send:hover {
+    background-color: white;
+    color: black;
+}
+
+#validEmail {
+    font-size: 0.8em;
+    color: steelblue;
+    font-weight: bold;
+}
+
+form{
+    margin-top: -1%;
+    height: 70%;
+}
