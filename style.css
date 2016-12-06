@@ -2,7 +2,16 @@ body {
     margin: auto;
     font-family: sans-serif;
     position: relative;
+    background: url("imgs/waterbg_static.png")
 }
+
+body img {
+    position: fixed;
+    min-width: 190%;
+    min-height: 100%;
+}
+
+
 
 video#bgVid {
     min-width: 190%;
@@ -94,7 +103,7 @@ h1 {
 }
 
 table {
-    width: 50%;
+    width: 65%;
     margin: auto;
     margin-bottom: 2%;
     font-family: 'Eczar', sans-serif;
@@ -113,7 +122,7 @@ th {
 td {
     text-align: left;
     color: yellow;
-    padding-left: 13%;
+    padding-left: 5%;
     letter-spacing: 1px;
 }
 
