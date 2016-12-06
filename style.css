@@ -50,7 +50,6 @@ h1 {
     position: absolute;
 }
 
-.close,
 .open {
     position: relative;
     top: 0;
@@ -64,10 +63,14 @@ h1 {
     margin: 0 10%;
 }
 
+.open:link {
+    color:white;
+    text-decoration: none;
+}
+
 #error a:hover,
 .appLinks a:hover,
-.open:hover,
-.close:hover {
+.open:hover {
     color: yellow;
 }
 
@@ -81,6 +84,7 @@ h1 {
     color: white;
     border-radius: 5%;
     height: 55vh;
+    width: 100%;
     font-family: "Verdana", sans-serif;
     border-bottom: 1px solid whitesmoke;
     border-top: 1px solid whitesmoke;
@@ -134,10 +138,10 @@ td {
 
 .appInfo {
     /*height: 30vh;*/
+    width: 100%;
     display: none;
     position: relative;
     margin-top: 2%;
-    width: 100%;
 }
 
 .appInfo h5 {
@@ -145,8 +149,6 @@ td {
     margin-right: 2%;
     margin-top: -0.5%;
 }
-
-
 
 .appsBtn {
     background-color: black;
