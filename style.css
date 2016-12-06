@@ -81,7 +81,7 @@ h1 {
     display: none;
     color: white;
     border-radius: 5%;
-    height: 50vh;
+    height: 55vh;
     font-family: "Verdana", sans-serif;
     border-bottom: 1px solid whitesmoke;
     border-top: 1px solid whitesmoke;
@@ -129,9 +129,9 @@ td {
 }
 
 #appsDiv img {
-    height: 80%;
+    height: 100%;
     float: left;
-    margin: 0 1% 0 2%;
+    margin: 0 1% 2% 2%;
 }
 
 .appInfo {
@@ -145,7 +145,10 @@ td {
     text-align: justify;
     margin-right: 2%;
     margin-top: -0.5%;
+
 }
+
+
 
 .appsBtn {
     background-color: black;
@@ -182,7 +185,11 @@ td {
 #calc,
 #cats,
 #deal {
-    position: absolute;
+position: absolute;
+}
+
+#deal {
+    height: 60%;
 }
 
 #appIndex {
