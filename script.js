@@ -48,13 +48,12 @@ var emailCheck = function () {
     }
     else {
         validEmail = true;
-        console.log("yes");
     }
 };
 
 var sendMsg = function (em, msg) {
     emailCheck();
-    if (validEmail) {
+    if (validEmail && $('#msg').val() > 0) {
         var data = {
             em: em,
             msg: msg
@@ -64,5 +63,10 @@ var sendMsg = function (em, msg) {
         document.getElementById('msg').value = "";
         document.getElementById("validEmail").innerText = "You Message Has Been Sent!";
         validEmail = false;
+        validMsg = false;
     }
+    else if (validEmail) {
+        document.getElementById("validEmail").innerText = "Please Enter a Message";
+    }
+
 };
