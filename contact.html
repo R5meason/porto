@@ -3,6 +3,7 @@
 <head>
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.3/firebase.js"></script>
     <script src="script.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Eczar:700" rel="stylesheet">
@@ -41,15 +42,17 @@
             <img src="imgs/logo_angellist.png" id="anglistLogo">
         </a>
         <h4>Click on an option above (opens in new tab) or leave a message below</h4>
-        <form method="POST" action="http://formspree.io/melynda.eason@gmail.com">
-            <input id="emailAddy" type="email" name="email" placeholder="Email">
-            <br>
-            <span id="validEmail"></span>
-            <br>
-            <textarea name="message" placeholder="Message"></textarea>
-            <br>
-            <button id="comment_send" type="submit" onclick="emailCheck()">Send</button>
-        </form>
+        <input id="emailAddy" type="email" name="email" placeholder="Email">
+        <br>
+        <span id="validEmail"></span>
+        <br>
+        <textarea id="msg" name="message" placeholder="Message"></textarea>
+        <br>
+        <button id="comment_send" type="submit" onclick="sendMsg(
+                   document.getElementById('emailAddy').value,
+                   document.getElementById('msg').value
+            )">Send
+        </button>
     </div>
 </div>
 </body>
