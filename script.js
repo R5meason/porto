@@ -68,5 +68,4 @@ var sendMsg = function (em, msg) {
     else if (validEmail) {
         document.getElementById("validEmail").innerText = "Please Enter a Message";
     }
-
 };
