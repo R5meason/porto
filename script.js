@@ -53,7 +53,7 @@ var emailCheck = function () {
 
 var sendMsg = function (em, msg) {
     emailCheck();
-    if (validEmail && $('#msg').val() > 0) {
+    if (validEmail && $('#msg').val().length > 0) {
         var data = {
             em: em,
             msg: msg
