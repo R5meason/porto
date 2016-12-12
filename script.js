@@ -1,20 +1,6 @@
-// Initialize Firebase
-var config = {
-    apiKey: "AIzaSyDkSPjgMHnma13HxpssmNrU4JyEB_652jc",
-    authDomain: "messagecenter-2ba1e.firebaseapp.com",
-    databaseURL: "https://messagecenter-2ba1e.firebaseio.com",
-    storageBucket: "messagecenter-2ba1e.appspot.com",
-    messagingSenderId: "107256469130"
-};
-
-firebase.initializeApp(config);
-var fbRef = firebase.database();
-
 $(window).load(function () {
     $('.displayInfo').slideDown("slow");
-});
 
-$(document).ready(function () {
     $("#dealBtn").click(function () {
 
         $("#deal").show("slow");
@@ -38,6 +24,17 @@ $(document).ready(function () {
         appOpen = true;
     });
 });
+
+var config = {
+    apiKey: "AIzaSyDkSPjgMHnma13HxpssmNrU4JyEB_652jc",
+    authDomain: "messagecenter-2ba1e.firebaseapp.com",
+    databaseURL: "https://messagecenter-2ba1e.firebaseio.com",
+    storageBucket: "messagecenter-2ba1e.appspot.com",
+    messagingSenderId: "107256469130"
+};
+
+firebase.initializeApp(config);
+var fbRef = firebase.database();
 
 var validEmail = false;
 
@@ -89,7 +86,6 @@ var sendMsg = function (em, msg) {
         fbRef.ref('msg').push(data);
         proceed();
     }
-
     else if (validEmail && $('#msg').val().length > 0 && $('#msg').val().length < 81) {
         var data = {
             em: em,
