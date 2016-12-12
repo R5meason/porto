@@ -61,7 +61,7 @@ var sendMsg = function (em, msg) {
         fbRef.ref('msg').push(data);
         document.getElementById('emailAddy').value = "";
         document.getElementById('msg').value = "";
-        document.getElementById("validEmail").innerText = "You Message Has Been Sent!";
+        document.getElementById("validEmail").innerText = "Your Message Has Been Sent!";
         validEmail = false;
         validMsg = false;
     }
