@@ -7,21 +7,18 @@ $(window).load(function () {
         $("#cats").hide("fast");
         $("#calc").hide("fast");
         $("#appIndex").hide("fast");
-        appOpen = true;
     });
     $("#catsBtn").click(function () {
         $("#cats").show("slow");
         $("#deal").hide("fast");
         $("#calc").hide("fast");
         $("#appIndex").hide("fast");
-        appOpen = true;
     });
     $("#calcBtn").click(function () {
         $("#calc").show("slow");
         $("#cats").hide("fast");
         $("#deal").hide("fast");
         $("#appIndex").hide("fast");
-        appOpen = true;
     });
 });
 

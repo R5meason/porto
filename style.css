@@ -159,6 +159,11 @@ td {
     outline: none;
 }
 
+.appsBtn:hover{
+    cursor: pointer;
+    cursor: hand;
+}
+
 .appLinks a {
     font-family: 'Supermercado One', sans-serif;
     color: white;
