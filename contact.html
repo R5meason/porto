@@ -16,43 +16,48 @@
     <source src="vids/waterBg.mp4" type="video/mp4" id="waterBg">
     <source src="vids/waterBg.webm" type="video/webm">
 </video>
-<div class="container1">
-    <h1>
-        Mindy Eason / Portfolio
-    </h1>
-    <div>
-        <a href="index.html" class="open" data-param="aboutDiv" id="aboutBtn">About</a>
-        <a href="apps.html" class="open" data-param="aboutDiv" id="aboutBtn">Applications</a>
-        <a href="contact.html" class="open" data-param="aboutDiv" id="aboutBtn">Contact</a>
+<div id=container_container>
+    <div class="container1">
+        <h1>
+            Mindy Eason / Portfolio
+        </h1>
+        <div id="pageNav">
+            <a href="index.html" class="open" data-param="aboutDiv" id="aboutBtn">About</a>
+            <a href="apps.html" class="open" data-param="aboutDiv" id="aboutBtn">Applications</a>
+            <a href="contact.html" class="open" data-param="aboutDiv" id="aboutBtn">Contact</a>
+        </div>
     </div>
-</div>
-<div class="container2">
-    <div class="displayInfo" id="contactDiv">
-        <a href="https://www.linkedin.com/in/mindy-eason-872653123" target="_blank">
-            <img src="imgs/logo_linkedIn.PNG" id="linkedLogo">
-        </a>
-        <a href="https://github.com/R5meason" target="_blank">
-            <img src="imgs/logo_github.png" id="githubLogo">
-        </a>
-
-        <a href="https://twitter.com/R5meason" target="_blank">
-            <img src="imgs/logo_twitter.png" id="twitterLogo">
-        </a>
-        <a href="https://angel.co/mindy-eason" target="_blank">
-            <img src="imgs/logo_angellist.png" id="anglistLogo">
-        </a>
-        <h4>Click on an option above or leave a message below</h4>
-        <input id="emailAddy" type="email" name="email" placeholder="Email">
-        <br>
-        <span id="validEmail"></span>
-        <br>
-        <textarea maxlength="160" id="msg" name="message" placeholder="160 Characters Max"></textarea>
-        <br>
-        <button id="comment_send" type="submit" onclick="sendMsg(
+    <div class="container2">
+        <div class="displayInfo" id="contactDiv">
+            <!--<div id="contactLogo">-->
+            <a href="https://www.linkedin.com/in/mindy-eason-872653123" target="_blank">
+                <img src="imgs/logo_linkedIn.PNG" id="linkedLogo">
+            </a>
+            <a href="https://github.com/R5meason" target="_blank">
+                <img src="imgs/logo_github.png" id="githubLogo">
+            </a>
+            <a href="https://twitter.com/R5meason" target="_blank">
+                <img src="imgs/logo_twitter.png" id="twitterLogo">
+            </a>
+            <a href="https://angel.co/mindy-eason" target="_blank">
+                <img src="imgs/logo_angellist.png" id="anglistLogo">
+            </a>
+            <h4>Click on an option above or leave a message below</h4>
+            <input id="name" placeholder="Name">
+            <br>
+            <input id="emailAddy" type="email" name="email" placeholder="Email">
+            <br>
+            <span id="validEmail"></span>
+            <br>
+            <textarea maxlength="160" id="msg" name="message" placeholder="160 Characters Max"></textarea>
+            <br>
+            <button id="comment_send" type="submit" onclick="sendMsg(
+                   document.getElementById('name').value,
                    document.getElementById('emailAddy').value,
                    document.getElementById('msg').value
             )">Send
-        </button>
+            </button>
+        </div>
     </div>
 </div>
 </body>
