@@ -77,7 +77,7 @@ h1 {
     text-decoration: none;
 }
 
-#error a:hover,
+#errorBtn:hover,
 .appLinks a:hover,
 .open:hover {
     color: yellow;
@@ -172,6 +172,7 @@ td {
     outline: none;
 }
 
+#errorBtn,
 .appsBtn:hover{
     cursor: pointer;
     cursor: hand;
@@ -282,25 +283,26 @@ width: 15%;
     font-weight: bold;
 }
 
-#error{
+#error {
     height: 100%;
 }
 
-.errorBtns button {
-    color: black;
-}
 
-.errorBtns button:hover {
-    color: black;
-}
-
-#error p,
-#error a {
+#error p {
     text-decoration: none;
     color: white;
     font-family: 'Supermercado One', sans-serif;
     text-align: center;
     font-size: 1.5em;
+}
+
+#errorBtn {
+    background: black;
+    color: white;
+    font-size: 1.5em;
+    border: none;
+    outline: none;
+    font-family: 'Supermercado One', sans-serif;
 }
 
 #appImgDeal {
