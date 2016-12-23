@@ -3,19 +3,19 @@ $(window).load(function () {
 
     $("#dealBtn").click(function () {
 
-        $("#deal").show("slow");
+        $("#deal").show("fast");
         $("#cats").hide("fast");
         $("#calc").hide("fast");
         $("#appIndex").hide("fast");
     });
     $("#catsBtn").click(function () {
-        $("#cats").show("slow");
+        $("#cats").show("fast");
         $("#deal").hide("fast");
         $("#calc").hide("fast");
         $("#appIndex").hide("fast");
     });
     $("#calcBtn").click(function () {
-        $("#calc").show("slow");
+        $("#calc").show("fast");
         $("#cats").hide("fast");
         $("#deal").hide("fast");
         $("#appIndex").hide("fast");
