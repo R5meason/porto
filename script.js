@@ -47,7 +47,7 @@ var nameCheck = function () {
 };
 
 var emailCheck = function () {
-    if (!$('#emailAddy').val().includes("@") || !$('#emailAddy').val().includes(".com")) {
+    if (!$('#emailAddy').val().includes("@") || !$('#emailAddy').val().includes(".com") || !$('#emailAddy').val().includes(".net") || !$('#emailAddy').val().includes(".org") || !$('#emailAddy').val().includes(".edu") || !$('#emailAddy').val().includes(".gov")) {
         document.getElementById("validEmail").innerHTML = "Please Enter a Valid Email Address";
         validEmail = false;
     }
