@@ -47,6 +47,8 @@
             <br>
             <input id="emailAddy" type="email" name="email" placeholder="Email">
             <br>
+            <input id="subj" placeholder="RE:">
+            <br>
             <span id="validEmail"></span>
             <br>
             <textarea maxlength="160" id="msg" name="message" placeholder="160 Characters Max"></textarea>
@@ -54,6 +56,7 @@
             <button id="comment_send" type="submit" onclick="sendMsg(
                    document.getElementById('name').value,
                    document.getElementById('emailAddy').value,
+                   document.getElementById('subj').value,
                    document.getElementById('msg').value
             )">Send
             </button>

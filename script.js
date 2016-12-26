@@ -59,13 +59,14 @@ var emailCheck = function () {
 var proceed = function () {
     document.getElementById('name').value = "";
     document.getElementById('emailAddy').value = "";
+    document.getElementById('subj').value = "";
     document.getElementById('msg').value = "";
     document.getElementById("validEmail").innerText = "Your Message Has Been Sent!";
     validEmail = false;
     nameEntered = false;
 };
 
-var sendMsg = function (name, em, msg) {
+var sendMsg = function (name, em, subj, msg) {
     nameCheck();
     if (nameEntered) {
         emailCheck();
@@ -74,6 +75,7 @@ var sendMsg = function (name, em, msg) {
             var data = {
                 name: name,
                 em: em,
+                subj: subj,
                 msg: msg
             };
             fbRef.ref('msg').push(data);
@@ -83,6 +85,7 @@ var sendMsg = function (name, em, msg) {
             var data = {
                 name: name,
                 em: em,
+                subj: subj,
                 msg: msg.substring(0, 19),
                 msg2: msg.substring(19)
             };
@@ -93,6 +96,7 @@ var sendMsg = function (name, em, msg) {
             var data = {
                 name: name,
                 em: em,
+                subj: subj,
                 msg: msg.substring(0, 19),
                 msg2: msg.substring(19, 39),
                 msg3: msg.substring(39)
@@ -104,6 +108,7 @@ var sendMsg = function (name, em, msg) {
             var data = {
                 name: name,
                 em: em,
+                subj: subj,
                 msg: msg.substring(0, 19),
                 msg2: msg.substring(19, 39),
                 msg3: msg.substring(39, 59),
@@ -116,6 +121,7 @@ var sendMsg = function (name, em, msg) {
             var data = {
                 name: name,
                 em: em,
+                subj: subj,
                 msg: msg.substring(0, 19),
                 msg2: msg.substring(19, 39),
                 msg3: msg.substring(39, 59),
@@ -129,6 +135,7 @@ var sendMsg = function (name, em, msg) {
             var data = {
                 name: name,
                 em: em,
+                subj: subj,
                 msg: msg.substring(0, 19),
                 msg2: msg.substring(19, 39),
                 msg3: msg.substring(39, 59),
@@ -143,6 +150,7 @@ var sendMsg = function (name, em, msg) {
             var data = {
                 name: name,
                 em: em,
+                subj: subj,
                 msg: msg.substring(0, 19),
                 msg2: msg.substring(19, 39),
                 msg3: msg.substring(39, 59),
@@ -158,6 +166,7 @@ var sendMsg = function (name, em, msg) {
             var data = {
                 name: name,
                 em: em,
+                subj: subj,
                 msg: msg.substring(0, 19),
                 msg2: msg.substring(19, 39),
                 msg3: msg.substring(39, 59),
