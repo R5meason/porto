@@ -2,20 +2,29 @@ $(window).load(function () {
     $('.displayInfo').slideDown("slow");
 
     $("#dealBtn").click(function () {
-
         $("#deal").show("fast");
+        $("#whatNum").hide("fast");
         $("#cats").hide("fast");
         $("#calc").hide("fast");
         $("#appIndex").hide("fast");
     });
     $("#catsBtn").click(function () {
         $("#cats").show("fast");
+        $("#whatNum").hide("fast");
         $("#deal").hide("fast");
         $("#calc").hide("fast");
         $("#appIndex").hide("fast");
     });
     $("#calcBtn").click(function () {
         $("#calc").show("fast");
+        $("#whatNum").hide("fast");
+        $("#cats").hide("fast");
+        $("#deal").hide("fast");
+        $("#appIndex").hide("fast");
+    });
+    $("#whatNumBtn").click(function () {
+        $("#whatNum").show("fast");
+        $("#calc").hide("fast");
         $("#cats").hide("fast");
         $("#deal").hide("fast");
         $("#appIndex").hide("fast");
