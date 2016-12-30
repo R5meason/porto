@@ -189,19 +189,28 @@ td {
     font-family: 'Eczar', sans-serif;
     color: darkred;
     font-weight: normal;
+}
 
+#dealBtn:hover{
+    color: red;
 }
 
 #catsBtn {
     font-family: 'Faster One', sans-serif;
     color: yellow;
+}
 
+#catsBtn:hover{
+    color: orangered;
 }
 
 #calcBtn {
     font-family: 'VT323', monospace, sans-serif;
-    color: silver;
+    color: grey;
+}
 
+#calcBtn:hover{
+    color: lightgrey;
 }
 
 #whatNumBtn {
@@ -209,6 +218,13 @@ td {
     color: white;
     font-size: 2vw;
 }
+
+#whatNumBtn:hover{
+    color: black;
+background-color: white;
+
+}
+
 
 #calc,
 #cats,
