@@ -82,9 +82,10 @@ var sendMsg = function (name, em, subj, msg) {
 
         if (validEmail && $('#msg').val().length > 0 && $('#msg').val().length < 21) {
             var data = {
-                name: name,
-                em: em,
-                subj: subj,
+                a_date: Date(),
+                b_name: name,
+                c_em: em,
+                d_subj: subj,
                 msg: msg
             };
             fbRef.ref('msg').push(data);
@@ -92,9 +93,10 @@ var sendMsg = function (name, em, subj, msg) {
         }
         else if (validEmail && $('#msg').val().length > 0 && $('#msg').val().length < 41) {
             var data = {
-                name: name,
-                em: em,
-                subj: subj,
+                a_date: Date(),
+                b_name: name,
+                c_em: em,
+                d_subj: subj,
                 msg: msg.substring(0, 19),
                 msg2: msg.substring(19)
             };
@@ -103,9 +105,10 @@ var sendMsg = function (name, em, subj, msg) {
         }
         else if (validEmail && $('#msg').val().length > 0 && $('#msg').val().length < 61) {
             var data = {
-                name: name,
-                em: em,
-                subj: subj,
+                a_date: Date(),
+                b_name: name,
+                c_em: em,
+                d_subj: subj,
                 msg: msg.substring(0, 19),
                 msg2: msg.substring(19, 39),
                 msg3: msg.substring(39)
@@ -115,9 +118,10 @@ var sendMsg = function (name, em, subj, msg) {
         }
         else if (validEmail && $('#msg').val().length > 0 && $('#msg').val().length < 81) {
             var data = {
-                name: name,
-                em: em,
-                subj: subj,
+                a_date: Date(),
+                b_name: name,
+                c_em: em,
+                d_subj: subj,
                 msg: msg.substring(0, 19),
                 msg2: msg.substring(19, 39),
                 msg3: msg.substring(39, 59),
@@ -128,9 +132,10 @@ var sendMsg = function (name, em, subj, msg) {
         }
         else if (validEmail && $('#msg').val().length > 0 && $('#msg').val().length < 101) {
             var data = {
-                name: name,
-                em: em,
-                subj: subj,
+                a_date: Date(),
+                b_name: name,
+                c_em: em,
+                d_subj: subj,
                 msg: msg.substring(0, 19),
                 msg2: msg.substring(19, 39),
                 msg3: msg.substring(39, 59),
@@ -142,9 +147,10 @@ var sendMsg = function (name, em, subj, msg) {
         }
         else if (validEmail && $('#msg').val().length > 0 && $('#msg').val().length < 121) {
             var data = {
-                name: name,
-                em: em,
-                subj: subj,
+                a_date: Date(),
+                b_name: name,
+                c_em: em,
+                d_subj: subj,
                 msg: msg.substring(0, 19),
                 msg2: msg.substring(19, 39),
                 msg3: msg.substring(39, 59),
@@ -157,9 +163,10 @@ var sendMsg = function (name, em, subj, msg) {
         }
         else if (validEmail && $('#msg').val().length > 0 && $('#msg').val().length < 141) {
             var data = {
-                name: name,
-                em: em,
-                subj: subj,
+                a_date: Date(),
+                b_name: name,
+                c_em: em,
+                d_subj: subj,
                 msg: msg.substring(0, 19),
                 msg2: msg.substring(19, 39),
                 msg3: msg.substring(39, 59),
@@ -173,9 +180,10 @@ var sendMsg = function (name, em, subj, msg) {
         }
         else if (validEmail && $('#msg').val().length > 0 && $('#msg').val().length < 161) {
             var data = {
-                name: name,
-                em: em,
-                subj: subj,
+                a_date: Date(),
+                b_name: name,
+                c_em: em,
+                d_subj: subj,
                 msg: msg.substring(0, 19),
                 msg2: msg.substring(19, 39),
                 msg3: msg.substring(39, 59),
