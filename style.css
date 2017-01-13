@@ -17,7 +17,7 @@ video#bgVid {
     width: auto;
     height: auto;
     position: fixed;
-    z-index:   -1;
+    z-index: -1;
 }
 
 h1 {
@@ -41,10 +41,10 @@ h1 {
     font-size: 1.2em;
     max-width: 100%;
     height: auto;
-    width: auto\9; /* ie8 */
+    width: auto \9; /* ie8 */
 }
 
-#pageNav{
+#pageNav {
     width: 100%;
 }
 
@@ -73,7 +73,7 @@ h1 {
 }
 
 .open:link {
-    color:white;
+    color: white;
     text-decoration: none;
 }
 
@@ -122,7 +122,7 @@ table, th, td {
 th {
     padding-bottom: 2%;
     font-family: 'Supermercado One', sans-serif;
-    font-size: 1.5em;
+    font-size: 3.5vh;
 }
 
 td {
@@ -151,7 +151,7 @@ td {
     display: none;
     max-width: 100%;
     height: auto;
-    width: auto\9; /* ie8 */
+    width: auto \9; /* ie8 */
 }
 
 .appInfo h5 {
@@ -159,7 +159,7 @@ td {
     padding: 1%;
 }
 
-.appBlurb{
+.appBlurb {
     width: 100%;
 
 }
@@ -173,7 +173,7 @@ td {
 }
 
 #errorBtn,
-.appsBtn:hover{
+.appsBtn:hover {
     cursor: pointer;
     cursor: hand;
 }
@@ -191,7 +191,7 @@ td {
     font-weight: normal;
 }
 
-#dealBtn:hover{
+#dealBtn:hover {
     color: red;
 }
 
@@ -200,7 +200,7 @@ td {
     color: yellow;
 }
 
-#catsBtn:hover{
+#catsBtn:hover {
     color: orangered;
 }
 
@@ -209,7 +209,7 @@ td {
     color: grey;
 }
 
-#calcBtn:hover{
+#calcBtn:hover {
     color: lightgrey;
 }
 
@@ -219,12 +219,11 @@ td {
     font-size: 2vw;
 }
 
-#whatNumBtn:hover{
+#whatNumBtn:hover {
     color: black;
-background-color: white;
+    background-color: white;
 
 }
-
 
 #calc,
 #cats,
@@ -258,19 +257,19 @@ background-color: white;
     text-decoration: none;
 }
 
-#twitterLogo{
-   margin-bottom: 1% ;
+#twitterLogo {
+    margin-bottom: 1%;
     width: 15%;
 }
 
 #twitterLogo,
 #linkedLogo {
-width: 15%;
+    width: 15%;
 
 }
 
 #anglistLogo {
-  width: 15%;
+    width: 15%;
     margin-bottom: 1%
 
 }
@@ -286,7 +285,7 @@ width: 15%;
     border-top: 1px solid whitesmoke;
     width: 100%;
     margin: 1% 0 1% 0;
-    font-size: 1.5em;
+    font-size: 3.5vh;
 }
 
 #contactDiv input {
@@ -311,7 +310,6 @@ width: 15%;
 #error {
     height: 100%;
 }
-
 
 #error p {
     text-decoration: none;
@@ -366,7 +364,7 @@ img#appImgWhatNum {
     font-weight: bold;
 }
 
-form{
+form {
     margin-top: -1%;
     height: 70%;
 }
