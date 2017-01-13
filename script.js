@@ -2,32 +2,24 @@ $(window).load(function () {
     $('.displayInfo').slideDown("slow");
 
     $("#dealBtn").click(function () {
-        $("#deal").show("fast");
-        $("#whatNum").hide("fast");
-        $("#cats").hide("fast");
-        $("#calc").hide("fast");
+        $(".appInfo").hide("fast");
         $("#appIndex").hide("fast");
+        $("#deal").show("fast");
     });
     $("#catsBtn").click(function () {
-        $("#cats").show("fast");
-        $("#whatNum").hide("fast");
-        $("#deal").hide("fast");
-        $("#calc").hide("fast");
         $("#appIndex").hide("fast");
+        $(".appInfo").hide("fast");
+        $("#cats").show("fast");
     });
     $("#calcBtn").click(function () {
-        $("#calc").show("fast");
-        $("#whatNum").hide("fast");
-        $("#cats").hide("fast");
-        $("#deal").hide("fast");
         $("#appIndex").hide("fast");
+        $(".appInfo").hide("fast");
+        $("#calc").show("fast");
     });
     $("#whatNumBtn").click(function () {
-        $("#whatNum").show("fast");
-        $("#calc").hide("fast");
-        $("#cats").hide("fast");
-        $("#deal").hide("fast");
         $("#appIndex").hide("fast");
+        $(".appInfo").hide("fast");
+        $("#whatNum").show("fast");
     });
 });
 
