@@ -109,7 +109,7 @@ h1 {
     font-size: 2.3vh;
 }
 
-.test{
+.aboutWelcome {
     text-align: center;
     font-family: 'Supermercado One', sans-serif;
     font-weight: bold;
@@ -120,7 +120,7 @@ table {
     width: 65%;
     margin: auto;
     margin-bottom: 2%;
-    font-family: 'Eczar', sans-serif;
+    font-family: 'Bree Serif', serif;
 }
 
 table, th, td {
