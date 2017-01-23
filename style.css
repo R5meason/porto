@@ -106,10 +106,11 @@ h1 {
 #aboutDiv p {
     text-align: justify;
     margin: 2% 3% 2% 3%;
+    font-size: 2.3vh;
 }
 
 .test{
-margin: 0 auto;
+    text-align: center;
     font-family: 'Supermercado One', sans-serif;
     font-weight: bold;
     font-size: 3.5vh;
