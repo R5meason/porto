@@ -108,6 +108,13 @@ h1 {
     margin: 2% 3% 2% 3%;
 }
 
+.test{
+    text-align: center;
+    font-family: 'Supermercado One', sans-serif;
+    font-weight: bold;
+    font-size: 3.5vh;
+}
+
 table {
     width: 65%;
     margin: auto;
