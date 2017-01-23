@@ -109,7 +109,7 @@ h1 {
 }
 
 .test{
-    text-align: center;
+margin: 0 auto;
     font-family: 'Supermercado One', sans-serif;
     font-weight: bold;
     font-size: 3.5vh;
